@@ -8,7 +8,7 @@ namespace RectangleIntersection
         [TestMethod]
         public void SampleTest()
         {
-            var rectangle = new Rectangle(new Point(0, 5), new Point(5, 0));
+            var rectangle = new Rectangle(new Point(4, 5), new Point(5, 0));
         }
     }
 }

@@ -2,8 +2,8 @@
 {
     public struct Point
     {
-        float _x;
-        float _y;
+        public float _x;
+        public float _y;
 
         public Point(int x, int y)
         {
