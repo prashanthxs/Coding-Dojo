@@ -6,9 +6,14 @@ namespace RectangleIntersection
     public class RectangleTests
     {
         [TestMethod]
-        public void SampleTest()
+        public void RectangleInsideAnother()
         {
-            var rectangle = new Rectangle(new Point(4, 5), new Point(5, 0));
+            var rectangle = new Rectangle(new Point(0, 10), new Point(10, 0));
+            var otherRectangle = new Rectangle(new Point(4,4), new Point(5,3));
+
+            var actual = rectangle.Overlaps(otherRectangle);
+
+            Assert.IsTrue(actual);
         }
     }
 }
